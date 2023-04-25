@@ -10,7 +10,7 @@ class Player
     if @life_points > 0
       print "#{@name} a #{@life_points} point(s) de vie. "
     else
-      print "Le joueur #{@name} est mort ! "
+      print "#{@name} est mort(e) ! "
     end
   end
 
@@ -49,7 +49,7 @@ class HumanPlayer < Player
     if @life_points > 0
       puts "#{@name} a #{@life_points} point(s) de vie et une arme de niveau #{@weapon_level}."
     else
-      puts "Le joueur #{@name} est mort !"
+      puts "#{@name} est mort(e) !"
     end
   end
 
