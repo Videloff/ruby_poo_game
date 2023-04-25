@@ -25,7 +25,7 @@ class Player
     if @life_points > 0 && player2.life_points > 0
       damage = compute_damage.to_i
       puts "le joueur #{@name} attaque le joueur #{player2.name}."
-      puts "il lui infligé #{damage} points de dommages."
+      puts "il lui a infligé #{damage} points de dommages."
       player2.gets_damage(damage)
     end
   end

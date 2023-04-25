@@ -82,7 +82,11 @@ def fight(human, enemies)
   while human.life_points > 0 && (enemies[0].life_points > 0 || enemies[1].life_points > 0 )
     print human.show_state
     human_turn(human, enemies)
-    puts "\nLes ennemies t'attaquent !"
+    if (enemies[0].life_points > 0 && enemies[1].life_points > 0)
+      puts "\nLes ennemies t'attaquent !"
+    elsif (enemies[0].life_points > 0 || enemies[1].life_points > 0)
+      puts "\nL'ennemie t'attaque !"
+    end
     if enemies.each{|mob|
       mob.attacks(human)
     }
