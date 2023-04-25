@@ -36,11 +36,9 @@ end
 
 def create_enemies
   list = []
-  # enemie = gets.chomp
-  # list = save_enemies(list, enemie)
-  bot1 = Player.new("mort-vivant")
+  bot1 = Player.new("Josiane")
   puts "un #{bot1.name} est apparu !"
-  bot2 = Player.new("squelette")
+  bot2 = Player.new("José")
   puts "un #{bot2.name} est apparu !"
   list = save_enemies(list, bot1)
   list = save_enemies(list, bot2)
